@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SLAY Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<footer class="footer">
+    <img src="slay-logo.png" class="footer-logo" />
+    <p>SLAY Community © 2025</p>
+</footer>
+<div id="lightbox">
+    <img id="lightbox-img" src="" alt="">
+</div>
+<script>
+document.addEventListener("click", function() {
+    const audio = document.getElementById("bg-music");
+    if (audio.paused) {
+        audio.play().catch(() => {});
+    }
+}, { once: true });
+</script>
+<body>
+  <div id="lightning-effect"></div>
+  <audio id="bg-music" autoplay loop>
+  <source src="musik-slay.mp3" type="audio/mpeg">
+</audio>
+  <canvas id="particle-bg"></canvas>
+<div id="loader">
+    <div class="loader-ring"></div>
+    <p class="loader-text">SABAR YA SLAYERS...</p>
+</div>
+    <!-- HEADER -->
+    <header id="header">
+        <h1 class="slay-title" id="slayTitle">SLAY COMMUNITY</h1>        <button id="darkToggle">🌙</button>
+    </header>
+    <section class="slay-slider">
+    <div class="slider-wrapper">
+
+        <div class="slide">
+            <img src="slay1.jpg" alt="SLAY Picture 1">
+        </div>
+
+        <div class="slide">
+            <img src="slay2.jpg" alt="SLAY Picture 2">
+        </div>
+
+        <div class="slide">
+            <img src="slay3.jpg" alt="SLAY Picture 3">
+        </div>
+
+    </div>
+
+    <button class="slider-btn prev">❮</button>
+    <button class="slider-btn next">❯</button>
+</section>
+    <!-- HERO -->
+    <section class="hero reveal">
+        <h2>WELCOME TO SLAY</h2>
+        <p>STYLE, LEGACY, ATTITUDE, YOUTH</p>
+    </section>
+
+<section id="vision-mission" class="reveal">
+    <h2 class="section-title">VISI SLAY</h2>
+
+    <p class="text-block">
+        Menjadi komunitas Roblox terbesar dan paling berpengaruh di Indonesia — kuat di dalam game, dan berdampak nyata di dunia sosial.
+        <br><br>
+        <strong>SLAY hadir sebagai movement:</strong> berkembang, berkarya, dan berbagi. ✨
+    </p>
+
+    <hr class="divider">
+
+
+    <h2 class="section-title">MISI SLAY</h2>
+
+    <div class="mission-list">
+        <div class="mission-item">
+            <h3>1. Membangun Komunitas Berkualitas</h3>
+            <p>Lingkungan yang rapi, positif, dan profesional.<br>Standar komunitas yang elegan dan disiplin.</p>
+        </div>
+
+        <div class="mission-item">
+            <h3>2. Mengembangkan Kreativitas & Skill Member</h3>
+            <p>Ruang belajar desain, event, branding, dan hal kreatif lainnya.<br>Edukasi rutin untuk bantu member berkembang.</p>
+        </div>
+
+        <div class="mission-item">
+            <h3>3. Memberikan Dampak Nyata</h3>
+            <p>Program donasi untuk yatim piatu dan dhuafa.<br>Kegiatan berbagi sebagai kontribusi nyata dari SLAY.</p>
+        </div>
+
+        <div class="mission-item">
+            <h3>4. Memperkuat Identitas Komunitas</h3>
+            <p>Budaya saling support dan respect.<br>Branding modern dan mudah dikenali.</p>
+        </div>
+
+        <div class="mission-item">
+            <h3>5. Menjadi Gerakan Positif di Roblox</h3>
+            <p>Membimbing pemain baru agar cepat berkembang.<br>Mengadakan event, kolaborasi, dan aktivitas komunitas yang memperkuat hubungan antar member.</p>
+        </div>
+    </div>
+
+    <hr class="divider">
+
+    <h2 class="section-title">NILAI UTAMA</h2>
+    <p class="text-block center">
+        <strong>Elegance • Impact • Community • Growth • Responsibility</strong>
+    </p>
+
+    <hr class="divider">
+
+    <h2 class="section-title">TAGLINE</h2>
+    <p class="text-block center tagline">
+        <strong>SLAY — From Game to Real-Life Impact.</strong>
+    </p>
+    <!-- ===== ACTION BUTTONS ===== -->
+<section class="action-buttons">
+    <h2>Join & Support SLAY</h2>
+
+    <div class="btn-wrapper">
+        <a href="https://discord.gg/YwZhYd2jWq" target="_blank" class="btn-action discord">
+            Join Discord SLAY Community
+        </a>
+
+        <a href="https://www.tiktok.com/@slaycommunity?_r=1&_t=ZS-927dPpbYID7" target="_blank" class="btn-action tiktok">
+            Visit TikTok SLAY
+        </a>
+
+        <a href="https://saweria.co/latifalamin" target="_blank" class="btn-action saweria">
+            Support via Saweria
+        </a>
+    </div>
+</section>
+</section>
+    <!-- ABOUT -->
+    <section class="about reveal">
+        <h2>About SLAY</h2>
+        <p>SLAY adalah komunitas Roblox yang fokus pada kedisiplinan, kreativitas, dan growth.
+Kita bangun lingkungan yang rapi, positif, dan profesional — tempat buat berkembang bareng, dari game sampai real life.
+
+SLAY — komunitas yang solid, elegan, dan berdampak.
+</p>
+    </section>
+
+    <!-- COMMENT + RATING -->
+    <section class="comment-container reveal">
+        <h2>Leave a Comment</h2>
+        <form id="commentForm">
+            <input type="text" id="name" placeholder="Your Name" required>
+            <textarea id="comment" placeholder="Your Comment" required></textarea>
+
+            <label>Rating:</label>
+            <div class="stars">
+                <span data-rating="1">⭐</span>
+                <span data-rating="2">⭐</span>
+                <span data-rating="3">⭐</span>
+                <span data-rating="4">⭐</span>
+                <span data-rating="5">⭐</span>
+            </div>
+
+            <button type="submit">Submit</button>
+        </form>
+
+        <div id="commentList"></div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
